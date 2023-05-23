@@ -5,9 +5,9 @@ import PetDetailsNotFound from './pages/petDetailsNotFound';
 import Root from './components/root';
 
 // Add react-router-dom imports
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider,createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 // create router with JSX Route elements
-const appRouter = "REPLACE ME";
+const appRouter = createBrowserRouter(createRoutesFromElements(<Route path="/" element={ <h1>Works!</h1> }/>));
 
 function App() {
   return (
